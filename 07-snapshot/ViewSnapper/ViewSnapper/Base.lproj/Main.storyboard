@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewSnapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ9-fr-TAg">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Animate" id="yTm-8D-roF">
+                                        <connections>
+                                            <action selector="handleAnimate:" destination="BYZ-38-t0r" id="nQV-yC-Oar"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="SShot" id="eeW-JM-CgV">
+                                        <connections>
+                                            <action selector="handleSnapshot:" destination="BYZ-38-t0r" id="VnI-wk-9oq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xen-9R-SXx"/>
+                                    <barButtonItem title="Pre" id="Ln0-eB-cva">
+                                        <connections>
+                                            <action selector="handlePreUpdateSnapshot:" destination="BYZ-38-t0r" id="kf2-dn-eSR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Post" id="HZl-Gc-zbO">
+                                        <connections>
+                                            <action selector="handlePostUpdateSnapshot:" destination="BYZ-38-t0r" id="2Yq-81-cbS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pIA-9Q-whf"/>
+                                    <barButtonItem title="Image" id="mG7-JD-98O">
+                                        <connections>
+                                            <action selector="handleImageSnapshot:" destination="BYZ-38-t0r" id="bVP-aS-EWy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-J6-4kX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SL7-J6-4kX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1hR-d3-Fgf"/>
+                            <constraint firstAttribute="trailing" secondItem="SL7-J6-4kX" secondAttribute="trailing" id="7Fn-0q-Aqu"/>
+                            <constraint firstItem="tZ9-fr-TAg" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="NX5-7C-4a7"/>
+                            <constraint firstItem="tZ9-fr-TAg" firstAttribute="leading" secondItem="SL7-J6-4kX" secondAttribute="leading" id="OaF-jX-elM"/>
+                            <constraint firstItem="tZ9-fr-TAg" firstAttribute="top" secondItem="SL7-J6-4kX" secondAttribute="bottom" id="RFA-W2-WE5"/>
+                            <constraint firstItem="tZ9-fr-TAg" firstAttribute="trailing" secondItem="SL7-J6-4kX" secondAttribute="trailing" id="ixj-1L-roh"/>
+                            <constraint firstItem="tZ9-fr-TAg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jNZ-Za-t3B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="SL7-J6-4kX" id="8jI-wa-2F5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="389"/>
+        </scene>
+    </scenes>
+</document>
