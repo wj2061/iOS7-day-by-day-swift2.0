@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0429439C1BD09760003EB9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429439B1BD09760003EB9E5 /* AppDelegate.swift */; };
+		042943A11BD09760003EB9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0429439F1BD09760003EB9E5 /* Main.storyboard */; };
+		042943A31BD09760003EB9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042943A21BD09760003EB9E5 /* Assets.xcassets */; };
+		042943A61BD09760003EB9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042943A41BD09760003EB9E5 /* LaunchScreen.storyboard */; };
+		042943AE1BD097D3003EB9E5 /* SCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042943AD1BD097D3003EB9E5 /* SCViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		042943B11BD0985D003EB9E5 /* SCItemBehaviorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042943B01BD0985D003EB9E5 /* SCItemBehaviorManager.swift */; settings = {ASSET_TAGS = (); }; };
+		042943B31BD0E1F6003EB9E5 /* SCSpringyCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042943B21BD0E1F6003EB9E5 /* SCSpringyCarousel.swift */; settings = {ASSET_TAGS = (); }; };
+		042943B51BD0F3F1003EB9E5 /* SCCollectionViewSampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042943B41BD0F3F1003EB9E5 /* SCCollectionViewSampleCell.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042943981BD0975F003EB9E5 /* SpringCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0429439B1BD09760003EB9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		042943A01BD09760003EB9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		042943A21BD09760003EB9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		042943A51BD09760003EB9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042943A71BD09760003EB9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042943AD1BD097D3003EB9E5 /* SCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCViewController.swift; sourceTree = "<group>"; };
+		042943B01BD0985D003EB9E5 /* SCItemBehaviorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCItemBehaviorManager.swift; sourceTree = "<group>"; };
+		042943B21BD0E1F6003EB9E5 /* SCSpringyCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSpringyCarousel.swift; sourceTree = "<group>"; };
+		042943B41BD0F3F1003EB9E5 /* SCCollectionViewSampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCollectionViewSampleCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042943951BD0975F003EB9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0429438F1BD0975F003EB9E5 = {
+			isa = PBXGroup;
+			children = (
+				0429439A1BD09760003EB9E5 /* SpringCarousel */,
+				042943991BD0975F003EB9E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042943991BD0975F003EB9E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042943981BD0975F003EB9E5 /* SpringCarousel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0429439A1BD09760003EB9E5 /* SpringCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				042943AF1BD097E6003EB9E5 /* CollectionView */,
+				042943AD1BD097D3003EB9E5 /* SCViewController.swift */,
+				0429439B1BD09760003EB9E5 /* AppDelegate.swift */,
+				0429439F1BD09760003EB9E5 /* Main.storyboard */,
+				042943A21BD09760003EB9E5 /* Assets.xcassets */,
+				042943A41BD09760003EB9E5 /* LaunchScreen.storyboard */,
+				042943A71BD09760003EB9E5 /* Info.plist */,
+			);
+			path = SpringCarousel;
+			sourceTree = "<group>";
+		};
+		042943AF1BD097E6003EB9E5 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				042943B01BD0985D003EB9E5 /* SCItemBehaviorManager.swift */,
+				042943B21BD0E1F6003EB9E5 /* SCSpringyCarousel.swift */,
+				042943B41BD0F3F1003EB9E5 /* SCCollectionViewSampleCell.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042943971BD0975F003EB9E5 /* SpringCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042943AA1BD09760003EB9E5 /* Build configuration list for PBXNativeTarget "SpringCarousel" */;
+			buildPhases = (
+				042943941BD0975F003EB9E5 /* Sources */,
+				042943951BD0975F003EB9E5 /* Frameworks */,
+				042943961BD0975F003EB9E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpringCarousel;
+			productName = SpringCarousel;
+			productReference = 042943981BD0975F003EB9E5 /* SpringCarousel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042943901BD0975F003EB9E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = wj;
+				TargetAttributes = {
+					042943971BD0975F003EB9E5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 042943931BD0975F003EB9E5 /* Build configuration list for PBXProject "SpringCarousel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0429438F1BD0975F003EB9E5;
+			productRefGroup = 042943991BD0975F003EB9E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042943971BD0975F003EB9E5 /* SpringCarousel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042943961BD0975F003EB9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042943A61BD09760003EB9E5 /* LaunchScreen.storyboard in Resources */,
+				042943A31BD09760003EB9E5 /* Assets.xcassets in Resources */,
+				042943A11BD09760003EB9E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042943941BD0975F003EB9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042943B51BD0F3F1003EB9E5 /* SCCollectionViewSampleCell.swift in Sources */,
+				042943B11BD0985D003EB9E5 /* SCItemBehaviorManager.swift in Sources */,
+				042943AE1BD097D3003EB9E5 /* SCViewController.swift in Sources */,
+				042943B31BD0E1F6003EB9E5 /* SCSpringyCarousel.swift in Sources */,
+				0429439C1BD09760003EB9E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0429439F1BD09760003EB9E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042943A01BD09760003EB9E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		042943A41BD09760003EB9E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				042943A51BD09760003EB9E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		042943A81BD09760003EB9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		042943A91BD09760003EB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042943AB1BD09760003EB9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpringCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpringCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		042943AC1BD09760003EB9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpringCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wj.SpringCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042943931BD0975F003EB9E5 /* Build configuration list for PBXProject "SpringCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042943A81BD09760003EB9E5 /* Debug */,
+				042943A91BD09760003EB9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042943AA1BD09760003EB9E5 /* Build configuration list for PBXNativeTarget "SpringCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042943AB1BD09760003EB9E5 /* Debug */,
+				042943AC1BD09760003EB9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042943901BD0975F003EB9E5 /* Project object */;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreetingSpeaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grf-H3-arV">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YL4-iR-Ti3">
+                                <rect key="frame" x="279" y="416" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEx-YW-hyf">
+                                <rect key="frame" x="268" y="445" width="64" height="30"/>
+                                <state key="normal" title="Greet Me"/>
+                                <connections>
+                                    <action selector="greetingButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHi-5N-oM7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the language in which you would like to be greeted:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qY8-Lc-hPq">
+                                <rect key="frame" x="20" y="163" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Grf-H3-arV" firstAttribute="top" secondItem="qY8-Lc-hPq" secondAttribute="bottom" constant="8" symbolic="YES" id="0fT-92-9ZT"/>
+                            <constraint firstItem="Grf-H3-arV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1If-Ct-4mF"/>
+                            <constraint firstItem="qY8-Lc-hPq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35a-7F-PbS"/>
+                            <constraint firstItem="Grf-H3-arV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Bg-XT-GnD"/>
+                            <constraint firstItem="YL4-iR-Ti3" firstAttribute="centerX" secondItem="Grf-H3-arV" secondAttribute="centerX" id="7QW-Vn-8FB"/>
+                            <constraint firstItem="YEx-YW-hyf" firstAttribute="centerX" secondItem="YL4-iR-Ti3" secondAttribute="centerX" id="882-2J-WdS"/>
+                            <constraint firstItem="YEx-YW-hyf" firstAttribute="top" secondItem="YL4-iR-Ti3" secondAttribute="bottom" constant="8" symbolic="YES" id="XCS-9J-tD5"/>
+                            <constraint firstItem="qY8-Lc-hPq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aIO-re-smf"/>
+                            <constraint firstItem="Grf-H3-arV" firstAttribute="centerX" secondItem="qY8-Lc-hPq" secondAttribute="centerX" id="eNv-iL-BcM"/>
+                            <constraint firstItem="qY8-Lc-hPq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="har-Bs-CFX"/>
+                            <constraint firstItem="Grf-H3-arV" firstAttribute="top" secondItem="qY8-Lc-hPq" secondAttribute="bottom" constant="8" id="lAm-9f-EGm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qY8-Lc-hPq" secondAttribute="trailing" constant="53" id="rP3-ed-y2a"/>
+                            <constraint firstItem="YL4-iR-Ti3" firstAttribute="top" secondItem="Grf-H3-arV" secondAttribute="bottom" constant="8" symbolic="YES" id="uhm-hX-Out"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="har-Bs-CFX"/>
+                                <exclude reference="rP3-ed-y2a"/>
+                                <exclude reference="0fT-92-9ZT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="YL4-iR-Ti3" id="FSs-x5-5ps"/>
+                        <outlet property="languagePicker" destination="Grf-H3-arV" id="hN3-tB-ow4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
