@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmileyFace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceo-9T-Vt1">
+                                <rect key="frame" x="254" y="28" width="92" height="30"/>
+                                <state key="normal" title="Retake Photo"/>
+                                <connections>
+                                    <action selector="handleStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ulb-YM-K0u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking Face..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYK-gK-g6r">
+                                <rect key="frame" x="237" y="289" width="127" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.58664772730000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-6h-0gz">
+                                <rect key="frame" x="290" y="261" width="20" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.58664772730000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWU-5r-0pe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.68266547040000003" green="1" blue="0.33834254749999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Db-Pc-DaB"/>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="centerX" secondItem="IGN-6h-0gz" secondAttribute="centerX" id="CNS-ia-Oxe"/>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="D53-Tu-0ML"/>
+                            <constraint firstAttribute="topMargin" secondItem="EWU-5r-0pe" secondAttribute="top" id="Frb-tR-HXr"/>
+                            <constraint firstItem="Ceo-9T-Vt1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJN-aa-1Ve"/>
+                            <constraint firstItem="AYK-gK-g6r" firstAttribute="top" secondItem="IGN-6h-0gz" secondAttribute="bottom" constant="8" id="N4g-wi-BcF"/>
+                            <constraint firstItem="Ceo-9T-Vt1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="NhZ-Og-6bW"/>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="SoV-Ec-lKF"/>
+                            <constraint firstItem="IGN-6h-0gz" firstAttribute="centerX" secondItem="AYK-gK-g6r" secondAttribute="centerX" id="TVM-pl-QMo"/>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="centerX" secondItem="Ceo-9T-Vt1" secondAttribute="centerX" id="aew-ai-NtJ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="EWU-5r-0pe" secondAttribute="bottom" id="cL0-Nx-dhn"/>
+                            <constraint firstItem="AYK-gK-g6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rFJ-Zo-Kbx"/>
+                            <constraint firstAttribute="trailing" secondItem="EWU-5r-0pe" secondAttribute="trailing" id="rlU-26-H8R"/>
+                            <constraint firstItem="AYK-gK-g6r" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s8T-pJ-2Jv"/>
+                            <constraint firstItem="EWU-5r-0pe" firstAttribute="centerY" secondItem="AYK-gK-g6r" secondAttribute="centerY" id="wC0-7i-zkd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CNS-ia-Oxe"/>
+                                <exclude reference="SoV-Ec-lKF"/>
+                                <exclude reference="aew-ai-NtJ"/>
+                                <exclude reference="cL0-Nx-dhn"/>
+                                <exclude reference="wC0-7i-zkd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="activityView" destination="IGN-6h-0gz" id="N1q-rX-UtW"/>
+                        <outlet property="imageView" destination="EWU-5r-0pe" id="Er7-W5-y8t"/>
+                        <outlet property="retakeButton" destination="Ceo-9T-Vt1" id="jjT-I2-CUU"/>
+                        <outlet property="statusLabel" destination="AYK-gK-g6r" id="TlG-xK-0JV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="389"/>
+        </scene>
+    </scenes>
+</document>
