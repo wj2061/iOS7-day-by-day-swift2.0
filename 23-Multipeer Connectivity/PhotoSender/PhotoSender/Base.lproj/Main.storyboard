@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zxF-vn-uxH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Slave-->
+        <scene sceneID="q5B-5f-CKq">
+            <objects>
+                <viewController id="8NE-ar-Hmb" customClass="SCSlaveViewController" customModule="PhotoSender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dVR-l2-awO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Dx-jT-k6w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RqV-Rm-2lw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoC-lV-bMz">
+                                <rect key="frame" x="242" y="66" width="116" height="30"/>
+                                <state key="normal" title="Start Advertising"/>
+                                <connections>
+                                    <action selector="handleStartAdvertisingButtonPressed" destination="8NE-ar-Hmb" eventType="touchUpInside" id="gDZ-ZF-tmr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-IU-c2t">
+                                <rect key="frame" x="0.0" y="104" width="600" height="447"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8aE-wm-CQe">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D5N-IU-c2t" firstAttribute="top" secondItem="hoC-lV-bMz" secondAttribute="bottom" constant="8" symbolic="YES" id="LGg-jw-POH"/>
+                            <constraint firstItem="8aE-wm-CQe" firstAttribute="leading" secondItem="RqV-Rm-2lw" secondAttribute="leadingMargin" id="N7f-dv-DOw"/>
+                            <constraint firstItem="hoC-lV-bMz" firstAttribute="top" secondItem="8aE-wm-CQe" secondAttribute="bottom" constant="8" symbolic="YES" id="OBY-VY-swb"/>
+                            <constraint firstItem="8aE-wm-CQe" firstAttribute="trailing" secondItem="RqV-Rm-2lw" secondAttribute="trailingMargin" id="PVN-Iy-lsL"/>
+                            <constraint firstItem="8aE-wm-CQe" firstAttribute="top" secondItem="dVR-l2-awO" secondAttribute="bottom" constant="8" symbolic="YES" id="RUa-Uv-cnY"/>
+                            <constraint firstItem="D5N-IU-c2t" firstAttribute="centerX" secondItem="hoC-lV-bMz" secondAttribute="centerX" id="jCG-jh-bka"/>
+                            <constraint firstItem="hoC-lV-bMz" firstAttribute="centerX" secondItem="8aE-wm-CQe" secondAttribute="centerX" id="ow8-Th-zd3"/>
+                            <constraint firstItem="D5N-IU-c2t" firstAttribute="bottom" secondItem="7Dx-jT-k6w" secondAttribute="top" id="qei-dV-jXs"/>
+                            <constraint firstItem="D5N-IU-c2t" firstAttribute="leading" secondItem="RqV-Rm-2lw" secondAttribute="leading" id="vUG-Lx-OcU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Slave" id="mAt-5o-bKf"/>
+                    <connections>
+                        <outlet property="imageView" destination="D5N-IU-c2t" id="qp8-qG-QOd"/>
+                        <outlet property="peerNameTextField" destination="8aE-wm-CQe" id="H7o-YP-nBi"/>
+                        <outlet property="startAdvertisingButton" destination="hoC-lV-bMz" id="QLP-cB-sBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdn-6s-Lxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="386"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="zR2-Yx-9oY">
+            <objects>
+                <viewController id="TI5-gQ-8ag" customClass="SCMasterViewController" customModule="PhotoSender" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fPY-sQ-1Ic"/>
+                        <viewControllerLayoutGuide type="bottom" id="GpH-8s-4SF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EcX-HF-qan">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qsD-9s-JwI">
+                                <rect key="frame" x="20" y="28" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBC-fJ-sy2">
+                                <rect key="frame" x="260" y="66" width="81" height="30"/>
+                                <state key="normal" title="Finde Peers"/>
+                                <connections>
+                                    <action selector="handleFindPeersButton" destination="TI5-gQ-8ag" eventType="touchUpInside" id="L82-Ck-0rB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scf-mX-EUa">
+                                <rect key="frame" x="262" y="285" width="77" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="handleTakePhotoButtonPressed" destination="TI5-gQ-8ag" eventType="touchUpInside" id="719-rs-PvW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cBC-fJ-sy2" firstAttribute="top" secondItem="qsD-9s-JwI" secondAttribute="bottom" constant="8" symbolic="YES" id="9UC-ii-BWf"/>
+                            <constraint firstItem="qsD-9s-JwI" firstAttribute="trailing" secondItem="EcX-HF-qan" secondAttribute="trailingMargin" id="HgP-Ov-cg1"/>
+                            <constraint firstItem="Scf-mX-EUa" firstAttribute="centerY" secondItem="EcX-HF-qan" secondAttribute="centerY" id="OvF-Ac-bTb"/>
+                            <constraint firstItem="Scf-mX-EUa" firstAttribute="centerX" secondItem="cBC-fJ-sy2" secondAttribute="centerX" id="SFJ-Cn-HN7"/>
+                            <constraint firstItem="qsD-9s-JwI" firstAttribute="leading" secondItem="EcX-HF-qan" secondAttribute="leadingMargin" id="Wvm-MR-OHS"/>
+                            <constraint firstItem="cBC-fJ-sy2" firstAttribute="centerX" secondItem="qsD-9s-JwI" secondAttribute="centerX" id="XP8-tv-4xb"/>
+                            <constraint firstItem="qsD-9s-JwI" firstAttribute="top" secondItem="fPY-sQ-1Ic" secondAttribute="bottom" constant="8" symbolic="YES" id="u0m-7y-0kE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Master" id="mfI-PA-rol"/>
+                    <connections>
+                        <outlet property="findPeersButton" destination="cBC-fJ-sy2" id="aDj-pV-n5I"/>
+                        <outlet property="peerNameTextField" destination="qsD-9s-JwI" id="9wH-IU-zME"/>
+                        <outlet property="takePhotoButton" destination="Scf-mX-EUa" id="yyu-zR-4Oo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzE-97-k3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="-275"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="X07-jP-d1w">
+            <objects>
+                <tabBarController id="zxF-vn-uxH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="o6Y-9l-LoC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TI5-gQ-8ag" kind="relationship" relationship="viewControllers" id="d0o-Lt-flO"/>
+                        <segue destination="8NE-ar-Hmb" kind="relationship" relationship="viewControllers" id="VR2-K3-2nl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8x-az-vpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-448" y="56"/>
+        </scene>
+    </scenes>
+</document>
