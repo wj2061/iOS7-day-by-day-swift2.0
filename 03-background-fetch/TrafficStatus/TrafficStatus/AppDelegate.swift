@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+
+        
+        let requestType = UIUserNotificationType.Badge
+        let settingsRequest = UIUserNotificationSettings(forTypes: requestType, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settingsRequest)
+        
         // Override point for customization after application launch.
         return true
     }

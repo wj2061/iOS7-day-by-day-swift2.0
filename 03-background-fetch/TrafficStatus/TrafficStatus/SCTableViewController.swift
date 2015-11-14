@@ -36,7 +36,7 @@ class SCTableViewController: UITableViewController {
     //MARK: - Utility methods
     @IBAction func refreshStatus() {
         createNewStatusUpdatesWithMin(1, max: 3) { () -> Void in
-            refreshControl?.endRefreshing()
+            self.refreshControl?.endRefreshing()
         }
         
     }
